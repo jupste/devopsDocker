@@ -1,0 +1,4 @@
+docker build -f DockerfileFront -t frontend .
+docker build -f DockerfileBackend -t backend .
+docker -d run -p 5000:5000 frontend
+docker run -p 8000:8000 backend
